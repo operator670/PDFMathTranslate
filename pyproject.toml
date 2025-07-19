@@ -36,6 +36,7 @@ dependencies = [
     "fontTools",
     "babeldoc>=0.1.22, <0.3.0",
     "rich",
+    "mcp>=1.6.0",
 ]
 
 [project.optional-dependencies]
@@ -47,9 +48,7 @@ backend = [
 argostranslate = [
     "argostranslate"
 ]
-mcp = [
-    "mcp>=1.6.0",
-]
+
 
 [dependency-groups]
 dev = [
