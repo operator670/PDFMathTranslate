@@ -1,0 +1,7 @@
+name: pdf2zh
+transport: sse
+command: ["pdf2zh", "--serve-sse", "--port", "${PORT:-12345}"]
+healthcheck:
+  type: http
+  path: /health  # Change this if your service exposes another health route
+  timeout: 120s
