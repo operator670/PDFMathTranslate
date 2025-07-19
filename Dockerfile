@@ -20,4 +20,4 @@ RUN uv pip install --system --no-cache ".[mcp]" \
       "babeldoc<0.3.0" "pymupdf<1.25.3" "pdfminer-six==20250416" \
  && babeldoc --version && babeldoc --warmup
 
-CMD ["pdf2zh", "-i"]
+CMD ["pdf2zh", "--serve-sse", "--port", "12345"]
